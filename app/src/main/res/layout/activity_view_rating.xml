@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <TextView
+        android:id="@+id/tvAssign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Driver Rating"
+        android:textColor="@color/purple_500"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvAssign"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:text="Rating"
+        android:textColor="#696767"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="false"
+        style="?android:attr/ratingBarStyleSmall"
+        android:max="5"
+        android:progressBackgroundTint="#FAD016"
+        android:progressTint="#FAD016"
+        android:layout_below="@+id/tvTotal"
+        android:stepSize="0.5"
+        android:layout_marginTop="3dp"
+        android:id="@+id/ratingBar"
+        android:isIndicator="true"
+        android:clickable="false"
+        android:layout_centerHorizontal="true"
+        android:focusable="false"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerView"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@+id/ratingBar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:id="@+id/textView"
+        android:text=""
+        android:textSize="18sp"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.gms.maps.MapView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mapView"
+        android:layout_above="@+id/r1" />
+
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/dashboard_style">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvRider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Rider Name"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imgPhone"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/phone_icon" />
+
+                <ImageView
+                    android:id="@+id/tvWeatherPickUp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/imgPhone"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="15dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/weather_iocn" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_below="@+id/imgPhone"
+                    android:id="@+id/pickUp"
+                    android:layout_toRightOf="@+id/tvWeatherPickUp"
+                    android:textColorHint="#000"
+                    android:paddingEnd="6dp">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#fff"
+                        android:hint="Pick Up Location"
+                        android:id="@+id/edtPickUp"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <ImageView
+                    android:id="@+id/tvWeatherDropOff"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/pickUp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="13dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/weather_iocn" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pickUp"
+                    android:id="@+id/dropOff"
+                    android:layout_toRightOf="@+id/tvWeatherDropOff"
+                    android:textColorHint="#000"
+                    android:paddingStart="6dp"
+                    android:paddingEnd="6dp">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#fff"
+                        android:hint="Drop-Off Location"
+                        android:id="@+id/edtDropOff"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btnArrived"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dropOff"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/purple_500"
+                    android:text="   Arrived   "
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnStartTrip"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dropOff"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="#C2185B"
+                    android:visibility="gone"
+                    android:text="   Start Trip   "
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnEndTrip"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:layout_below="@+id/dropOff"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="#D32F2F"
+                    android:visibility="gone"
+                    android:text="   End Trip   "
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

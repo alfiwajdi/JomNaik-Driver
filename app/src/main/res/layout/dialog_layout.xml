@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgBike"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/bike_iocn" />
+
+        <TextView
+            android:id="@+id/tvReq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgBike"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="New Ride Request"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvReq"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Rider Gender"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/tvGender"
+            android:id="@+id/pickUp"
+            android:textColorHint="#000"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:hint="Pick Up Location"
+                android:drawableStart="@drawable/ic_location"
+                android:id="@+id/edtPickUp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_below="@+id/pickUp"
+            android:id="@+id/dropOff"
+            android:textColorHint="#000"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:hint="Drop-Off Location"
+                android:drawableStart="@drawable/ic_location"
+                android:id="@+id/edtDropOff"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <View
+            android:id="@+id/v1"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_below="@+id/dropOff"
+            android:layout_marginTop="15dp"
+            android:background="#979696" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/l1"
+            android:orientation="horizontal"
+            android:layout_below="@+id/v1">
+
+            <Button
+                android:id="@+id/btnAccept"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15sp"
+                android:background="@drawable/login_btn_bg"
+                android:ems="8"
+                android:text="Accept"
+                android:textColor="#fff" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="5dp"
+                android:layout_weight="0.2"
+                android:layout_below="@+id/dropOff" />
+
+            <Button
+                android:id="@+id/btnReject"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15sp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/login_btn_bg"
+                android:ems="8"
+                android:text="Reject"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="10sp"
+            android:layout_below="@+id/l1" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

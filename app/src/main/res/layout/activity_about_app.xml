@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AboutAppActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:background="@drawable/background_design">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="FREQUENTLY ASK QUESTIONS"
+                    android:textColor="#fff"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="How to volunteer to be a driver?"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Student can volunteer to be a driver by signing up on JomNaik driver apps. User have to key in their email and password in order to create an account."
+                android:layout_marginRight="10dp"
+                android:textAlignment="textStart"
+                android:textColor="#696767"
+                android:textSize="17sp"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Is the rider have to pay for the fare?"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="This is apps Is volunteer based e-hailing. Rider does not have to pay for a trip."
+                android:layout_marginRight="10dp"
+                android:textAlignment="textStart"
+                android:textColor="#696767"
+                android:textSize="17sp"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="What type of vehicles does JomNaik services used?"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="JomNaik is based on motorcycle."
+                android:layout_marginRight="10dp"
+                android:textAlignment="textStart"
+                android:textColor="#696767"
+                android:textSize="17sp"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="How to book a ride?"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="User have to create an account first. After that click on 'Book a Ride' on dashboard. User have to search drop off location and click search button and then click on 'find volunteer button'. The driver will accept the ride request. Thus, booking process completed."
+                android:layout_marginRight="10dp"
+                android:textAlignment="textStart"
+                android:textColor="#696767"
+                android:textSize="17sp"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

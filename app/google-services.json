@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "869750777975",
+    "firebase_url": "https://jomnaik-dd3b9-default-rtdb.firebaseio.com",
+    "project_id": "jomnaik-dd3b9",
+    "storage_bucket": "jomnaik-dd3b9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:869750777975:android:37e932f80cc131d053be72",
+        "android_client_info": {
+          "package_name": "com.app.jomnaik"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "869750777975-jtuvkq3hforup1u57kem7otmbmoc11r9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKSdYqK2pxqFrpSm_s_l85XLzZlT7H0XY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "869750777975-jtuvkq3hforup1u57kem7otmbmoc11r9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

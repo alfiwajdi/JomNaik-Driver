@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">JomNaik Driver App</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="google_map_api_key">AIzaSyDDB9QJlbIrCKSCPVtePbu-B5vmTpI4Hug</string>
+    <string-array name="gender">
+        <item>Select Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+</resources>
